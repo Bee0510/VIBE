@@ -7,12 +7,14 @@ import Contact from "./Components/Contact";
 import Banner from "./Components/Banner";
 import Home from "./Components/Home";
 import About from "./Components/About";
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-coolDark to-gray-900 bg-no-repeat bg-cover overflow-clip w-screen h-screen ">
+    <div className="bg-gradient-to-b from-coolDark to-gray-900 bg-no-repeat bg-cover overflow-clip w-screen h-screen overflow-y-scroll">
       <Router>
         <Navbar />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Banner" element={<Banner />} />
